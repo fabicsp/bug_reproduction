@@ -25,14 +25,9 @@ const StyledInput = styled(Input)`
   }
 `;
 
-const ToggleBtn = () => {
-  const [isDark, { toggle }] = useDarkreader(false);
-  return <button onClick={toggle}>Switch to {isDark ? "light" : "dark"} mode</button>
-}
-
 
 function App() {
-  const [, { toggle }] = useDarkreader(false);
+  const [isDark, { toggle }] = useDarkreader(false);
 
   return (
     <div className="App">
@@ -54,16 +49,8 @@ function App() {
         </ul>
       </nav>
 
-      <SemanticButton onClick={toggle}>
-        semantic-ui Button
-      </SemanticButton >
-      <QuickFilterButton onClick={toggle}>
-        semantic-ui/styled Button
-      </QuickFilterButton >
-      <button onClick={toggle}>
-        Simple button
-      </button>
-
+      <h1>Input to show up the bug:</h1>
+      
       <StyledInput
         fluid
         iconPosition="left"
@@ -76,8 +63,20 @@ function App() {
         style={{ height: '100%' }}
         placeholder="semantic-input"
       />
-      <h1>Toggle darkreader with npm package:</h1>
-      <ToggleBtn />
+
+      <h1>Switch to {isDark ? "light" : "dark"} mode:</h1>
+
+      <SemanticButton onClick={toggle}>
+        semantic-ui Button
+      </SemanticButton >
+      
+      <QuickFilterButton onClick={toggle}>
+        semantic-ui/styled Button
+      </QuickFilterButton >
+      
+      <button onClick={toggle}>
+        Simple button
+      </button>
 
     </div>
   );
