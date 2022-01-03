@@ -42,7 +42,10 @@ function App() {
           Requirements:
         </h2>
         <ul>
-          <li><a href="https://www.npmjs.com/package/darkreader" rel="noreferrer" target="_blank">darkreader npm</a></li>
+          <li>
+            <a href="https://www.npmjs.com/package/darkreader" rel="noreferrer" target="_blank">darkreader</a> /
+            <a href="https://www.npmjs.com/package/react-darkreader" rel="noreferrer" target="_blank">react-darkreader</a>
+          </li>
           <li><a href="https://www.npmjs.com/package/semantic-ui-react" rel="noreferrer" target="_blank">semantic-ui-react npm</a></li>
           <li><a href="https://www.npmjs.com/package/semantic-ui-css" rel="noreferrer" target="_blank">semantic-ui-css npm</a></li>
           <li><a href="https://darkreader.org/blog" rel="noreferrer" target="_blank">darkreader chrome extension</a></li>
