@@ -75,7 +75,7 @@ function App() {
       </QuickFilterButton >
       
       <button onClick={toggle}>
-        Simple button
+        Switch to {isDark ? "light" : "dark"} mode
       </button>
 
     </div>
